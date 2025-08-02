@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickets | Eventra</title>
+    <link rel="stylesheet" href="css/tickets.css" />
+    <script defer src="js/tickets.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="src/logo.png" alt="" id="logo">
+
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="event.html">EVENTS</a>
+            <a href="tickets.html" class="active">TICKETS</a>
+            <a href="about.html">ABOUT US</a>
+
+            <a href="#" id="notifyBtn"><img src="src/notification.png" alt="" id="msg" /></a>
+            <div id="notificationPopup">
+                <p>You have 3 new notifications!</p>
+            </div>
+            <a href="account.html" id="userBtn"><img src="src/user.png" alt="" id="usr" /></a>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <section class="tickets">
+
+        <section class="image">
+            <img src="src/ticket2.png" alt="">
+        </section>
+
+        <section class="info">
+            <h2>VIP TICKET FOR</h2>
+            <h3>Opera Under the Stars</h3>
+            <a href="#">Buy now</a>
+        </section>
+
+    </section>
+
+    <section class="tickets">
+
+        <section class="image">
+            <img src="src/TIcket1.jpg" alt="">
+        </section>
+
+        <section class="info">
+            <h2>STANDERD TICKET FOR</h2>
+            <h3>Opera Under the Stars</h3>
+            <a href="#">Buy now</a>
+        </section>
+
+    </section>
+
+    <section class="tickets">
+
+        <section class="image">
+            <img src="src/TIcket1.jpg" alt="">
+        </section>
+
+        <section class="info">
+            <h2>TICKET FOR</h2>
+            <h3>Rhythm & Beats</h3>
+            <a href="#">Buy now</a>
+        </section>
+
+    </section>
+
+    <div id="paymentModal" class="model"> 
+        <form action="" id="payment">
+            <label>Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+            <font></font>
+
+            <label>Card Holder</label>
+            <input type="text" id="cardHolder" name="cardHolder" required>
+            <font></font>
+
+            <label>CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+            <font></font>
+
+            <label>Expire Date</label>
+            <input type="date" id="expDate" name="expDate" required>
+            <font></font>
+
+            <input type="submit" value="PAY" id="submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

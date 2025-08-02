@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <title>Login | Eventra</title>
+
+</head>
+
+<body>
+
+    <!--Creating Login form-->
+    <form id="loginForm">
+
+
+        <!-- Add logo image-->
+        <img src="src/logo.png" alt="">
+
+        <!-- Login title -->
+        <h1>LOG IN</h1>
+
+        <!-- Username text and input field -->
+        <label>Username</label><br>
+        <input type="text" name="Username" id="Username" required><br>
+        
+
+        <!-- Password text and input field -->
+        <label>Password</label><br>
+        <input type="password" name="Password" id="Password" required><br>
+        
+        <!-- Forget password clickable text -->
+        <p>Forget Password?</p>
+
+        <!-- submit button -->
+        <input type="submit" value="LOG IN" id="submit">
+
+        <!-- don't have account text -->
+        <h4>Still Do not have a account?</h4>
+
+        <!-- Create new account button -->
+        <input type="button" value="CREATE ACCOUNT" id="createAcc" onclick="window.location.href='newacc.html'">
+    </form>
+
+</body>
+
+</html>

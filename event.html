@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Eventra</title>
+    <link rel="stylesheet" href="css/event.css" />
+    <script defer src="js/event.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="src/logo.png" alt="" id="logo">
+
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="event.html" class="active">EVENTS</a>
+            <a href="tickets.html">TICKETS</a>
+            <a href="about.html">ABOUT US</a>
+
+            <a href="#" id="notifyBtn"><img src="src/notification.png" alt="" id="msg" /></a>
+            <div id="notificationPopup">
+                <p>You have 3 new notifications!</p>
+            </div>
+            <a href="account.html" id="userBtn"><img src="src/user.png" alt="" id="usr" /></a>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <section id="searchSec">
+    <input type="text" id="search" placeholder="search event name">
+    <input type="button" value="Search" id="searchbtn">
+    <input type="button"value="Refresh" id="refreshbtn">
+    </section>
+
+    <section id="events">
+
+        <section id="e1">
+            <img src="src/event1.jpg" alt="">
+            <h2>GameZone Championship</h2>
+            <p>Competitive e-sports tournament featuring top gamers. Organized by Eventra Gaming Hub.</p>
+            <h3>July 5, 2025</h3>
+            <a href="#" onclick="participate('GameZone Championship', event)">Participate</a>
+        </section>
+
+        <section id="e2">
+            <img src="src/event2.jpg" alt="">
+            <h2>Code Clash Hackathon</h2>
+            <p>24-hour coding challenge for developers and innovators. Hosted by DevSphere & Eventra.</p>
+            <h3>July 10, 2025</h3>
+            <a href="#" onclick="participate('Code Clash Hackathon', event)">Participate</a>
+        </section>
+
+        <section id="e3">
+            <img src="src/event3.jpg" alt="">
+            <h2>Green Clean-Up Drive</h2>
+            <p>Community environment cleaning event. Organized by EcoRoots with Eventra.</p>
+            <h3>July 14, 2025</h3>
+            <a href="#" onclick="participate('Clean-up Drive', event)">Participate</a>
+        </section>
+
+        <section id="e4">
+            <img src="src/event4.jpg" alt="">
+            <h2>Rhythm & Beats</h2>
+            <p>Live musical show with local bands and DJs. Organized by VibeTunes & Eventra.</p>
+            <h3>July 18, 2025</h3>
+            <a href="#" onclick="participate('Rhythm & Beats', event)">Participate</a>
+        </section>
+
+        <section id="e5">
+            <img src="src/event5.jpg" alt="">
+            <h2>Opera Under the Stars</h2>
+            <p>Classical opera night in open-air theatre. Presented by Opera Lanka & Eventra.</p>
+            <h3>July 23, 2025</h3>
+            <a href="#" onclick="participate('Opera Under Stars', event)">Participate</a>
+        </section>
+
+        <section id="e6">
+            <img src="src/event6.jpg" alt="">
+            <h2>Voices for Change</h2>
+            <p>Peaceful protest for social justice and awareness. Coordinated by UnityForce with Eventra.</p>
+            <h3>July 29, 2025</h3>
+            <a href="#" onclick="participate('Voices for change', event)">Participate</a>
+        </section>
+
+    </section>
+
+    <!-- Scroll to top button -->
+    <button onclick="scrollToTop()" id="scrollUpBtn"><img src="src/scrollw.png" alt=""></button>
+
+</body>
+
+</html>

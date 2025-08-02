@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* margin padding borders auto align to content*/
+}
+
+body {
+    font-family: Arial;
+    background:url(../src/bgimg1.jpeg) center/cover; /*add image to background center it cover viewport*/
+    height: 100vh; /*show content 100% height withing screen size  */
+    display: flex; /*import flex model*/
+    align-items: center; /*y axis center*/
+    justify-content: center; /*x axis center*/
+}
+
+
+/*style the form*/
+form {
+    background: white; /*white bg color to form*/
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0,0.5); /*add a shadow box shadow: x axis control, y axis control, spred conrol, color;*/
+    max-width: 400px; /*add 400px width maximum*/
+    text-align: center; /*align all element to center inside the form*/
+}
+
+/*style logo image in form*/
+form img {
+    width: 50%; /*give 50% width from form*/
+    margin-bottom: 20px; /*add a space from bottom*/
+}
+
+/*styling all header login*/
+h1 {
+    color: #333; /*change font color*/
+    margin-bottom: 30px; /*add a space from bottom*/
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*styling label tags*/
+label {
+    color: #333; /*change font color*/
+    display: block; /*import block modet*/
+    text-align: left; /*align to left*/
+    margin-top: 20px ; /*add a space from top*/
+    font-weight: 500;
+}
+
+/*styling username input and password input*/
+input[type="text"],
+input[type="password"] {
+    width: 100%; /*give a 100% width*/
+    padding: 12px; 
+    border: 2px solid rgba(0, 0, 0, 0.4); /*add a border, border:border size, type, color;*/
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px; /*add a space from bottom*/
+    transition: border-color 0.3s; /*smoothness of the focus*/
+}
+
+/*styling username input and password input when click it*/
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;/*remove default outline*/
+    border-color: #358F80; /*add our border color*/
+}
+
+/*style forget password*/
+p {
+    text-align: right; /*align text to right*/
+    margin-top: 15px; /*add a space from top*/
+    margin-bottom: 25px; /*add a space from bottom*/
+    color: #56AB91; /*change font color*/
+    font-size: 14px;
+    cursor: pointer;  /*change mouse icon*/
+    transition: all 0.3s; 
+}
+
+/*when going through p tag*/
+p:hover {
+    color: #358F80; 
+    text-decoration: underline; 
+}
+
+/*styling login button*/
+#submit {
+    width: 100%; /*give 100% width*/
+    padding: 12px;
+    background: #036666; /*change bg color*/
+    color: white; /*change color*/
+    border: none; /*remove default border*/
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /*change mouse icon*/
+    margin-bottom: 20px; /*add a space from bottom*/
+    transition: background 0.3s; /*hover time*/
+}
+
+/*when going through login button*/
+#submit:hover {
+    background: #358F80;
+}
+
+/*styling do not have account text*/
+h4 {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 15px; /*add a space from bottom*/
+    font-weight: normal; /*font boldness*/
+}
+
+/*styling create account button*/
+#createAcc {
+    width: 100%; /*gove 100% width*/
+    padding: 12px;
+    background: transparent; /*give background transparency*/
+    color: #56AB91; /*change font color*/
+    border: 2px solid #56AB91;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /*change mouse icon*/
+    transition: all 0.3s; /*hover time*/
+}
+
+/*when going through create account button*/
+#createAcc:hover {
+    background: #56AB91; /*change background color*/ 
+    color: white; /*change font color*/
+}

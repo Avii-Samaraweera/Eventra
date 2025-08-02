@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* margin padding borders auto align to content*/
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url(../src/bgimg1.jpeg) center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/*entire form*/
+form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/*eventra logo image*/
+form img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/*h1 tag create account*/
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+label {
+    color: #333;
+    display: block;
+    text-align: left;
+    margin: 15px 0 5px 0;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #358F80;
+}
+
+font {
+    display: block;
+    color: #e74c3c;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+    min-height: 15px;
+}
+
+#createAcc {
+    width: 100%;
+    padding: 12px;
+    background: #036666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+#createAcc:hover {
+    background: #358F80;
+}
+
+#backBtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#backBtn:hover{
+    background: #cbf3f0;
+}
+
+#scrollUpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#scrollUpBtn:hover {
+    background: #cbf3f0;
+}
+
+

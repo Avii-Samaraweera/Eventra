@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* margin padding borders auto align to content*/
+}
+/* style body*/
+body {
+    font-family: Arial; /* font type arial*/
+    background: white; /* background color:*/
+}
+
+/* Header Styles */
+header {
+    background: white; /*background color: */
+    padding: 15px 30px; /*padding bottom and top sizes*/
+    display: flex; /* display model flex*/
+    justify-content: space-between; /*add equal spaces between main tags inside header*/
+    align-items: center;/*y axis center*/
+    position: sticky; /*fixed the position*/
+    top: 0;
+    z-index: 100;
+
+}
+
+#logo {
+    width: 8%;
+}
+
+nav {
+    display: flex;/*called flex items*/
+    align-items: center;
+    gap: 20px; /* navigator gap*/
+
+}
+
+nav a {
+    text-decoration: none;  /* Remove underline from text */
+    color: #333;
+    font-weight: 600;
+    padding: 8px;/* Add space inside element */
+    border-radius: 5px;
+    transition: all 0.3s; /* Smooth hover animation */
+    font-size: 16px;
+}
+
+
+nav a:hover {
+    color: #358F80;
+    background: rgba(53, 143, 128, 0.1);
+}
+
+nav a.active {
+    color: #036666;
+    background: rgba(3, 102, 102, 0.1);
+    font-weight: bold;
+}
+
+
+/*notification icon, account icon*/
+#msg,
+#usr {
+    width: 60%;
+    transition: transform 0.3s;
+}
+
+#msg:hover,
+#usr:hover {
+    transform: scale(1.1); /*change thw size when hover*/
+}
+
+/* Notification Popup */
+#notificationPopup {
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    background: #081c15;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 200;
+}
+
+#notificationPopup.show {
+    display: block;
+}
+
+#notificationPopup p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+hr {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+/*main section welcome to eventra*/
+#hero {
+    width: 95%;
+    background: url(../src/heroimg.jpeg) center; /*add image to background center it cover viewport*/
+    background-size: cover;
+    aspect-ratio: 3/1;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+}
+
+#hero p {
+    color: white;
+    margin: 1% 10%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+}
+
+#explore {
+    background: white;
+    padding: 10px 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #358F80;
+    transition: all 0.3s ease;
+}
+
+#explore:hover {
+    color: white;
+    background: #358F80;
+}
+
+#upeT {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#upcoming {
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    gap: 2%;
+}
+
+#upe1 {
+    flex: 1;
+    width: 30%;
+    background: url(../src/helloween.jpg) no-repeat center top;
+    background-size: cover;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#upe2 {
+    flex: 1;
+    width: 30%;
+    background: url(../src/book\ exhi.jpg) no-repeat center top;
+    background-size: cover;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#upe3 {
+    flex: 1;
+    width: 30%;
+    background: url(../src/new\ years\ eve.jpg) no-repeat center top;
+    background-size: cover;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#upcoming h1 {
+    color: white;
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#upcoming p {
+    color: white;
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#upcoming section:hover {
+    transform: scale(1.02);
+
+}
+
+#lceT {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#completed {
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    gap: 2%;
+}
+
+#completed h1 {
+    color: white;
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#completed p {
+    color: white;
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#ce1 {
+    flex: 1;
+    width: 20%;
+    background: url(../src/graffity.jpg) no-repeat center top;
+    background-size: cover;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#ce2 {
+    flex: 1;
+    width: 20%;
+    background: url(../src/treeplant.jpeg) no-repeat center top;
+    background-size: cover;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#ce3 {
+    flex: 1;
+    width: 20%;
+    background: url(../src/charity.jpeg) no-repeat center top;
+    background-size: cover;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#ce4 {
+    flex: 1;
+    width: 20%;
+    background: url(../src/rapbattle.jpg) no-repeat center top;
+    background-size: cover;
+    aspect-ratio: 3/2;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#completed section:hover {
+    transform: scale(1.02);
+
+}
+
+
+#scrollUpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    padding: 10px;
+    background: #036666;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+    transition: background 0.3s;
+}
+
+@media (max-width: 1100px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #logo {
+        width: 15%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    /* Navigation links - force to first row */
+    nav a:not(#notifyBtn):not(#userBtn) {
+        flex: 0 0 auto;
+    }
+
+    /* Icon container links - force to second row */
+    #notifyBtn,
+    #userBtn {
+        flex: 0 0 auto;
+        order: 1;
+    }
+
+    /* Make sure icons maintain their size */
+    #msg,
+    #usr {
+        width: 60%;
+    }
+
+    /* Add some spacing between the two rows */
+    nav {
+        row-gap: 5px;
+    }
+
+    #hero h1 {
+        text-align: center;
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    #hero p{
+        font-size: 15px;
+
+    }
+
+    #explore{
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    #upeT{
+        font-size: 25px;
+    }
+
+    #lceT{
+        font-size: 25px;
+    }
+
+    #upcoming h1{
+        font-size: 15px;
+    }
+
+    #upcoming p{
+        font-size: 10px;
+    }
+     
+    #completed h1{
+        font-size: 15px;
+    }
+
+    #completed p{
+        font-size: 10px;
+    }
+
+
+}
