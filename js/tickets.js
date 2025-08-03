@@ -21,7 +21,6 @@ document.getElementById('notifyBtn').addEventListener('click', function (e) {
 
 document.addEventListener('click', closeNotification);
 
-
 // when click any buy button load payment form
 document.querySelectorAll('.info a').forEach(btn => {
   btn.addEventListener('click', function (e) {
@@ -53,21 +52,18 @@ document.getElementById("payment").addEventListener("submit", function (e) {
   // Card Number Validation (font[0])
   if (!/^\d{16}$/.test(inputs[0].value.trim())) {
     fonts[0].textContent = "Card number must be 16 digits.";
-    fonts[0].style.color = "red";
     valid = false;
   }
 
   // Card Holder Validation (font[1])
   if (!/^[A-Za-z ]+$/.test(inputs[1].value.trim())) {
     fonts[1].textContent = "Name must contain letters only.";
-    fonts[1].style.color = "red";
     valid = false;
   }
 
   // CVV Validation (font[2])
   if (!/^\d{3}$/.test(inputs[2].value.trim())) {
     fonts[2].textContent = "CVV must be 3 digits.";
-    fonts[2].style.color = "red";
     valid = false;
   }
 
@@ -77,7 +73,6 @@ document.getElementById("payment").addEventListener("submit", function (e) {
   today.setHours(0, 0, 0, 0); // Clear time part
   if (isNaN(expDate.getTime()) || expDate < today) {
     fonts[3].textContent = "Date must be in the future.";
-    fonts[3].style.color = "red";
     valid = false;
   }
 
