@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial;
     background: white;
 }
 
-/* Header Styles */
+/*header style*/
 header {
     background: white;
     padding: 15px 30px;
@@ -22,10 +23,13 @@ header {
 
 }
 
+/*logo image in header*/
 #logo {
     width: 8%;
 }
 
+
+/*nav bar*/
 nav {
     display: flex;
     align-items: center;
@@ -34,6 +38,8 @@ nav {
     flex-wrap: nowrap;
 }
 
+
+/*nav bar anchor tags*/
 nav a {
     text-decoration: none;
     color: #333;
@@ -45,12 +51,14 @@ nav a {
     font-size: 16px;
 }
 
-
+/*nav a tags hover effect*/
 nav a:hover {
     color: #358F80;
     background: rgba(53, 143, 128, 0.1);
 }
 
+
+/*active nav a tag*/
 nav a.active {
     color: #036666;
     background: rgba(3, 102, 102, 0.1);
@@ -58,6 +66,7 @@ nav a.active {
 }
 
 
+/*notify icon and account icom*/
 #msg,
 #usr {
     width: 60%;
@@ -65,6 +74,7 @@ nav a.active {
     transition: transform 0.3s;
 }
 
+/*notify icon and account icon hover animation*/
 #msg:hover,
 #usr:hover {
     transform: scale(1.1);
@@ -95,12 +105,14 @@ nav a.active {
     filter: none;
 }
 
+/*horizontal line*/
 hr {
     width: 95%;
     margin: 0 auto;
-
 }
 
+
+/*misson section*/
 #mission {
     width: 95%;
     background: url(../src/aboutbg.png) no-repeat center top;
@@ -115,6 +127,7 @@ hr {
     align-items: center;
 }
 
+/*mission and vison header*/
 #mission h1 {
     color: white;
     font-size: 35px;
@@ -122,6 +135,7 @@ hr {
     filter: drop-shadow(0 0 5px rgb(0, 0, 0));
 }
 
+/*paragraph*/
 #mission p {
     color: white;
     margin: 1% 10%;
@@ -131,12 +145,13 @@ hr {
     filter: drop-shadow(0 0 5px rgb(0, 0, 0));
 }
 
+/*top roles header*/
 #topRole {
     font-size: 35px;
     font-weight: 800;
     text-align: center;
 }
-
+/* main section for role*/
 #team {
     width: 95%;
     display: flex;
@@ -144,6 +159,7 @@ hr {
     gap: 1%;
 }
 
+/*sub section role*/
 #team section {
     flex: 1;
     width: 15%;
@@ -153,24 +169,28 @@ hr {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
+/*role image*/
 #team section img {
     width: 100%;
     border-radius: 15px 15px 0 0;
 
 }
 
+/*role job name*/
 #team section h1{
     margin-top: 15px;
     font-size: 20px;
     color: white;  
 }
 
+/*person name*/
 #team section p{
     margin: 5px 0 15px 0;
     font-size: 18px;
     color: white;
 }
 
+/*horizontal line*/
 #team section hr{
     margin-top: 5px;
     width: 80%;
@@ -179,6 +199,7 @@ hr {
     background: rgb(255, 255, 255);
 }
 
+/*contact info main sextion*/
 #contactInfo{
     width: 95%;
     display: flex;
@@ -186,6 +207,7 @@ hr {
     gap: 5%;
 }
 
+/*contact info sub sections*/
 #contactInfo section{
     flex: 1;
     width: 25%;
@@ -193,6 +215,7 @@ hr {
     justify-content: center;
 }
 
+/*contact info headers*/
 #contactInfo section h2{
     font-weight: 600;
     font-size: 20px;
@@ -200,15 +223,20 @@ hr {
     margin: 2px;
 }
 
+/*contact details*/
 #contactInfo section p{
     color: #777777;
 }
 
+
+/*contact buttons*/
 #contactInfo section a{
 
     color: #358F80;
 }
 
+
+/*scroll button*/
 #scrollUpBtn {
     position: fixed;
     bottom: 20px;

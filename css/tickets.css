@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial;
     background: white;
 }
 
-/* Header Styles */
+/*header style*/
 header {
     background: white;
     padding: 15px 30px;
@@ -22,17 +23,23 @@ header {
 
 }
 
+/*logo image in header*/
 #logo {
     width: 8%;
 }
 
+
+/*nav bar*/
 nav {
     display: flex;
     align-items: center;
     gap: 20px;
-   
+    position: relative;
+    flex-wrap: nowrap;
 }
 
+
+/*nav bar anchor tags*/
 nav a {
     text-decoration: none;
     color: #333;
@@ -40,15 +47,18 @@ nav a {
     padding: 8px;
     border-radius: 5px;
     transition: all 0.3s;
+    white-space: nowrap;
     font-size: 16px;
 }
 
-
+/*nav a tags hover effect*/
 nav a:hover {
     color: #358F80;
     background: rgba(53, 143, 128, 0.1);
 }
 
+
+/*active nav a tag*/
 nav a.active {
     color: #036666;
     background: rgba(3, 102, 102, 0.1);
@@ -56,6 +66,7 @@ nav a.active {
 }
 
 
+/*notify icon and account icom*/
 #msg,
 #usr {
     width: 60%;
@@ -63,6 +74,7 @@ nav a.active {
     transition: transform 0.3s;
 }
 
+/*notify icon and account icon hover animation*/
 #msg:hover,
 #usr:hover {
     transform: scale(1.1);
@@ -93,11 +105,14 @@ nav a.active {
     filter: none;
 }
 
+/*horizontal line*/
 hr {
     width: 95%;
     margin: 0 auto;
 }
 
+
+/*ticket section*/
 .tickets {
     display: flex;
     width: 60%;
@@ -109,14 +124,18 @@ hr {
 
 }
 
+
+/*ticket section hover animation*/
 .tickets:hover {
     transform: scale(1.02);
 }
 
+/*ticket image section*/
 .image {
     width: 20%;
 }
 
+/*ticket image*/
 .image img {
     width: 100%;
     height: 100%;
@@ -124,6 +143,8 @@ hr {
     border-radius: 15px 0 0 15px;
 }
 
+
+/*ticket info section*/
 .info {
     width: 80%;
     display: flex;
@@ -133,6 +154,8 @@ hr {
     justify-content: center;
 }
 
+
+/*buy button*/
 .info a {
     position: absolute;
     bottom: 20px;
@@ -158,6 +181,8 @@ hr {
     z-index: 1000;
 }
 
+
+/*paymemt form*/
 form {
     background: white;
     padding: 40px;
@@ -171,6 +196,8 @@ form {
     /* center horizontally inside modal */
 }
 
+
+/*all labels*/
 label {
     color: #333;
     display: block;
@@ -179,6 +206,8 @@ label {
     font-weight: 500;
 }
 
+
+/*all input fields*/
 input[type="text"],
 input[type="password"],
 input[type="date"] {
@@ -191,6 +220,8 @@ input[type="date"] {
     transition: border-color 0.3s;
 }
 
+
+/*all input fields when clicked*/
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus {
@@ -198,6 +229,8 @@ input[type="date"]:focus {
     border-color: #358F80;
 }
 
+
+/*pay button*/
 #submit {
     width: 100%;
     padding: 12px;
@@ -212,10 +245,12 @@ input[type="date"]:focus {
     transition: background 0.3s;
 }
 
+/*pay button hover*/
 #submit:hover {
     background: #358F80;
 }
 
+/*font tags to show errors*/
 font {
     display: block;
     color: #e74c3c;

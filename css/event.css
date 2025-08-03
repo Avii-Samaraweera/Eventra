@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial;
     background: white;
 }
 
-/* Header Styles */
+/*header style*/
 header {
     background: white;
     padding: 15px 30px;
@@ -22,10 +23,13 @@ header {
 
 }
 
+/*logo image in header*/
 #logo {
     width: 8%;
 }
 
+
+/*nav bar*/
 nav {
     display: flex;
     align-items: center;
@@ -34,6 +38,8 @@ nav {
     flex-wrap: nowrap;
 }
 
+
+/*nav bar anchor tags*/
 nav a {
     text-decoration: none;
     color: #333;
@@ -45,12 +51,14 @@ nav a {
     font-size: 16px;
 }
 
-
+/*nav a tags hover effect*/
 nav a:hover {
     color: #358F80;
     background: rgba(53, 143, 128, 0.1);
 }
 
+
+/*active nav a tag*/
 nav a.active {
     color: #036666;
     background: rgba(3, 102, 102, 0.1);
@@ -58,6 +66,7 @@ nav a.active {
 }
 
 
+/*notify icon and account icom*/
 #msg,
 #usr {
     width: 60%;
@@ -65,6 +74,7 @@ nav a.active {
     transition: transform 0.3s;
 }
 
+/*notify icon and account icon hover animation*/
 #msg:hover,
 #usr:hover {
     transform: scale(1.1);
@@ -95,6 +105,7 @@ nav a.active {
     filter: none;
 }
 
+/*horizontal line*/
 hr {
     width: 95%;
     margin: 0 auto;
@@ -110,18 +121,21 @@ hr {
     /* centers the section */
 }
 
+/*sub sections*/
 #events section {
     border-radius: 15px;
     background: #036666;
     text-align: center;
 }
 
+/*subsections images*/
 #events section img {
     width: 100%;
-    aspect-ratio: 3/2;
+    aspect-ratio: 3/2; /*width 3 and height 2 in ratio*/
     border-radius: 15px 15px 0 0;
 }
 
+/*event name title*/
 #events section h2 {
     display: inline-block; /*work as a block*/
     color: white;
@@ -130,15 +144,18 @@ hr {
     border: 1px solid white;
 }
 
+/*event description*/
 #events section p {
     margin: 15px 10%;
     color: white;
 }
 
+/*event dates*/
 #events section h3 {
     color: white;
 }
 
+/*participation button*/
 #events section a {
     display: inline-block;
     color: black;
@@ -152,10 +169,12 @@ hr {
 }
 
 
+/*participation button hover*/
 #events section a:hover {
     transform: scale(1.1);
 }
 
+/*main search section*/
 #searchSec{
     width: 30%;
     display: flex;
@@ -164,6 +183,7 @@ hr {
 
 }
 
+/*search bar*/
 input[type="text"] {
     width: 50%;
     padding: 12px; 
@@ -173,6 +193,7 @@ input[type="text"] {
     transition: border-color 0.3s;
 }
 
+/*refresh and search button*/
 input[type="button"]{
     width: 20%;
     font-size: 16px; 
@@ -187,6 +208,7 @@ input[type="button"]{
 
 }
 
+/*button hover effect*/
 input[type="button"]:hover {
     background: #358F80;
 }
@@ -197,6 +219,8 @@ input[type="text"]:focus{
     border-color: #358F80; /*add our border color*/
 }
 
+
+/*scroll button*/
 #scrollUpBtn {
     position: fixed;
     bottom: 20px;

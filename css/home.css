@@ -1,54 +1,75 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;/* margin padding borders auto align to content*/
+    box-sizing: border-box;
+    /* margin padding borders auto align to content*/
 }
+
 /* style body*/
 body {
-    font-family: Arial; /* font type arial*/
-    background: white; /* background color:*/
+    font-family: Arial;
+    /* font type arial*/
+    background: white;
+    /* background color:*/
 }
 
 /* Header Styles */
 header {
-    background: white; /*background color: */
-    padding: 15px 30px; /*padding bottom and top sizes*/
-    display: flex; /* display model flex*/
-    justify-content: space-between; /*add equal spaces between main tags inside header*/
-    align-items: center;/*y axis center*/
-    position: sticky; /*fixed the position*/
+    background: white;
+    /*background color: */
+    padding: 15px 30px;
+    /*padding bottom and top sizes*/
+    display: flex;
+    /* display model flex*/
+    justify-content: space-between;
+    /*add equal spaces between main tags inside header*/
+    align-items: center;
+    /*y axis center*/
+    position: sticky;
+    /*fixed the position*/
     top: 0;
     z-index: 100;
 
 }
 
+/*style logo image in header */
 #logo {
     width: 8%;
 }
 
+/*styling full nav bar*/
 nav {
-    display: flex;/*called flex items*/
+    display: flex;
+    /*called flex items*/
     align-items: center;
-    gap: 20px; /* navigator gap*/
+    gap: 20px;
+    /* navigator gap*/
 
 }
 
+/*styling ancher tags, home, event etc*/
 nav a {
-    text-decoration: none;  /* Remove underline from text */
+    text-decoration: none;
+    /* Remove underline from text */
     color: #333;
     font-weight: 600;
-    padding: 8px;/* Add space inside element */
+    padding: 8px;
+    /* Add space inside element */
     border-radius: 5px;
-    transition: all 0.3s; /* Smooth hover animation */
+    transition: all 0.3s;
+    /* Smooth hover animation */
     font-size: 16px;
 }
 
 
+/*navigation anchor tags hover effect*/
 nav a:hover {
     color: #358F80;
     background: rgba(53, 143, 128, 0.1);
 }
 
+
+/*active nav a tag*/
 nav a.active {
     color: #036666;
     background: rgba(3, 102, 102, 0.1);
@@ -63,9 +84,11 @@ nav a.active {
     transition: transform 0.3s;
 }
 
+/*notification icon account icon hover effect*/
 #msg:hover,
 #usr:hover {
-    transform: scale(1.1); /*change thw size when hover*/
+    transform: scale(1.1);
+    /*change thw size when hover*/
 }
 
 /* Notification Popup */
@@ -82,9 +105,11 @@ nav a.active {
     z-index: 200;
 }
 
+
 #notificationPopup.show {
     display: block;
 }
+
 
 #notificationPopup p {
     margin: 0;
@@ -92,6 +117,8 @@ nav a.active {
     font-size: 14px;
 }
 
+
+/*horizontal line*/
 hr {
     width: 95%;
     margin: 0 auto;
@@ -101,7 +128,8 @@ hr {
 /*main section welcome to eventra*/
 #hero {
     width: 95%;
-    background: url(../src/heroimg.jpeg) center; /*add image to background center it cover viewport*/
+    background: url(../src/heroimg.jpeg) center;
+    /*add image to background center it cover viewport*/
     background-size: cover;
     aspect-ratio: 3/1;
     margin: 30px auto;
@@ -113,6 +141,8 @@ hr {
     align-items: center;
 }
 
+
+/*main section heading*/
 #hero h1 {
     color: white;
     font-size: 35px;
@@ -120,6 +150,7 @@ hr {
     filter: drop-shadow(0 0 5px rgb(0, 0, 0));
 }
 
+/*main section paragraph*/
 #hero p {
     color: white;
     margin: 1% 10%;
@@ -129,6 +160,7 @@ hr {
     filter: drop-shadow(0 0 5px rgb(0, 0, 0));
 }
 
+/*exlpore button*/
 #explore {
     background: white;
     padding: 10px 15px;
@@ -141,17 +173,22 @@ hr {
     transition: all 0.3s ease;
 }
 
+
+/*explore button hover*/
 #explore:hover {
     color: white;
     background: #358F80;
 }
 
+
+/*upcoming events header*/
 #upeT {
     font-size: 35px;
     font-weight: 800;
     text-align: center;
 }
 
+/*main upcoming event section*/
 #upcoming {
     width: 95%;
     margin: 30px auto;
@@ -159,6 +196,9 @@ hr {
     gap: 2%;
 }
 
+
+
+/*starting sub upcoming event sections*/
 #upe1 {
     flex: 1;
     width: 30%;
@@ -204,6 +244,8 @@ hr {
     transition: transform 0.3s;
 }
 
+
+/*upcoming events header*/
 #upcoming h1 {
     color: white;
     filter: drop-shadow(0 0 5px rgb(0, 0, 0));
@@ -211,6 +253,7 @@ hr {
     font-weight: 800;
 }
 
+/*upcoming events coming soon*/
 #upcoming p {
     color: white;
     filter: drop-shadow(0 0 5px rgb(0, 0, 0));
@@ -218,17 +261,23 @@ hr {
     font-weight: 500;
 }
 
+
+/*upcoming sections hover effect*/
 #upcoming section:hover {
     transform: scale(1.02);
 
 }
 
+
+/*completed event header tag*/
 #lceT {
     font-size: 35px;
     font-weight: 800;
     text-align: center;
 }
 
+
+/*main completed section*/
 #completed {
     width: 95%;
     margin: 30px auto;
@@ -236,6 +285,7 @@ hr {
     gap: 2%;
 }
 
+/*completed sections header tag*/
 #completed h1 {
     color: white;
     filter: drop-shadow(0 0 3px rgb(0, 0, 0));
@@ -243,6 +293,7 @@ hr {
     font-weight: 800;
 }
 
+/*completed text*/
 #completed p {
     color: white;
     filter: drop-shadow(0 0 5px rgb(0, 0, 0));
@@ -250,6 +301,8 @@ hr {
     font-weight: 500;
 }
 
+
+/*all sub elements of main*/
 #ce1 {
     flex: 1;
     width: 20%;
@@ -310,12 +363,14 @@ hr {
     transition: transform 0.3s;
 }
 
+/*comleted sections hover*/
 #completed section:hover {
     transform: scale(1.02);
 
 }
 
 
+/*scroll button*/
 #scrollUpBtn {
     position: fixed;
     bottom: 20px;
@@ -330,6 +385,32 @@ hr {
     display: none;
     transition: background 0.3s;
 }
+
+/* Animation keyframes */
+@keyframes fadeSlideUp {
+    /*animation stars from here*/
+
+  from {
+    opacity: 0; /*no opacity*/
+    transform: translateY(30px); /*stay in 30 px under exact postion*/
+  }
+  /*animation end here*/
+  to {
+    opacity: 1; /*show the content */
+    transform: translateY(0); /*come to current position*/
+  }
+}
+
+/* Apply animation */
+#hero,
+#upeT,
+#lceT,
+#upcoming section,
+#completed section {
+  animation: fadeSlideUp 0.8s ease forwards; /*animation type , animation time, style */
+  opacity: 0;
+}
+
 
 @media (max-width: 1100px) {
 
@@ -382,39 +463,39 @@ hr {
         margin-top: 15px;
     }
 
-    #hero p{
+    #hero p {
         font-size: 15px;
 
     }
 
-    #explore{
+    #explore {
         font-size: 15px;
         padding: 5px;
         border-radius: 5px;
         margin-bottom: 10px;
     }
 
-    #upeT{
+    #upeT {
         font-size: 25px;
     }
 
-    #lceT{
+    #lceT {
         font-size: 25px;
     }
 
-    #upcoming h1{
+    #upcoming h1 {
         font-size: 15px;
     }
 
-    #upcoming p{
+    #upcoming p {
         font-size: 10px;
     }
-     
-    #completed h1{
+
+    #completed h1 {
         font-size: 15px;
     }
 
-    #completed p{
+    #completed p {
         font-size: 10px;
     }
 

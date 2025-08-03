@@ -5,6 +5,7 @@
 
 }
 
+/*styling body*/
 body {
     font-family: Arial, sans-serif;
     background: url(../src/bgimg1.jpeg) center/cover;
@@ -40,6 +41,7 @@ h1 {
     font-weight: bold;
 }
 
+/*styling all labels*/
 label {
     color: #333;
     display: block;
@@ -48,6 +50,8 @@ label {
     font-weight: 500;
 }
 
+
+/*Styling all input fields*/
 input[type="text"],
 input[type="password"] {
     width: 100%;
@@ -59,12 +63,14 @@ input[type="password"] {
     transition: border-color 0.3s;
 }
 
+/*input field hover animation*/
 input[type="text"]:focus,
 input[type="password"]:focus {
     outline: none;
     border-color: #358F80;
 }
 
+/*styling font tags for errors*/
 font {
     display: block;
     color: #e74c3c;
@@ -74,6 +80,8 @@ font {
     min-height: 15px;
 }
 
+
+/*style create acc button*/
 #createAcc {
     width: 100%;
     padding: 12px;
@@ -88,10 +96,12 @@ font {
     transition: background 0.3s;
 }
 
+/*create acc hover animation*/
 #createAcc:hover {
     background: #358F80;
 }
 
+/*style back button*/
 #backBtn {
     position: fixed;
     top: 20px;
@@ -102,10 +112,13 @@ font {
     transition: background 0.3s;
 }
 
+/*back button hover animation*/
 #backBtn:hover{
     background: #cbf3f0;
 }
 
+
+/*styling scroll button*/
 #scrollUpBtn {
     position: fixed;
     bottom: 20px;
@@ -118,6 +131,7 @@ font {
     transition: background 0.3s;
 }
 
+/*scroll button hover animation*/
 #scrollUpBtn:hover {
     background: #cbf3f0;
 }
