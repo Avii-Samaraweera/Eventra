@@ -1,6 +1,6 @@
 // fully load the html page
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     //quary selector selects tags
     const form = document.querySelector("form");
 
@@ -103,11 +103,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (isValid) {
-            const data = { firstName, lastName, email, username, password }; 
+            // created array to store elements
+            const data = [firstName, lastName, email, username, password];
             console.log("✅ Validated Data:", data);
             form.submit();
-            // proceed with form submission or AJAX here
         }
+
     });
 });
 
